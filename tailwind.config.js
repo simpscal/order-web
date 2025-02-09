@@ -149,20 +149,20 @@ module.exports = {
                 'accent-magenta-bolder': 'var(--magenta-900)',
                 'accent-gray': 'var(--neutral-800)',
                 'accent-gray-bolder': 'var(--neutral-1100)',
-                'disabled': 'var(--neutral-400-A)',
-                'inverse': 'var(--neutral-0)',
-                'selected': 'var(--blue-700)',
-                'brand': 'var(--blue-700)',
-                'danger': 'var(--red-800)',
-                'warning': 'var(--orange-800)',
+                disabled: 'var(--neutral-400-A)',
+                inverse: 'var(--neutral-0)',
+                selected: 'var(--blue-700)',
+                brand: 'var(--blue-700)',
+                danger: 'var(--red-800)',
+                warning: 'var(--orange-800)',
                 'warning-inverse': 'var(--neutral-1000)',
-                'success': 'var(--green-800)',
-                'discovery': 'var(--purple-800)',
-                'information': 'var(--blue-800)',
-                'subtlest': 'var(--neutral-700)',
-                'subtle': 'var(--neutral-800)',
+                success: 'var(--green-800)',
+                discovery: 'var(--purple-800)',
+                information: 'var(--blue-800)',
+                subtlest: 'var(--neutral-700)',
+                subtle: 'var(--neutral-800)',
 
-                'link': 'var(--blue-700)',
+                link: 'var(--blue-700)',
                 'link-pressed': 'var(--blue-800)',
                 'link-visited': 'var(--purple-700)',
                 'link-visited-pressed': 'var(--purple-800)'
@@ -178,19 +178,19 @@ module.exports = {
                 'accent-purple': 'var(--purple-600)',
                 'accent-magenta': 'var(--magenta-600)',
                 'accent-gray': 'var(--neutral-600)',
-                'disabled': 'var(--neutral-200-A)',
-                'focus': 'var(--blue-500)',
-                'input': 'var(--neutral-500)',
-                'inverse': 'var(--neutral-0)',
-                'selected': 'var(--blue-700)',
-                'brand': 'var(--blue-700)',
-                'danger': 'var(--red-700)',
-                'warning': 'var(--orange-600)',
+                disabled: 'var(--neutral-200-A)',
+                focus: 'var(--blue-500)',
+                input: 'var(--neutral-500)',
+                inverse: 'var(--neutral-0)',
+                selected: 'var(--blue-700)',
+                brand: 'var(--blue-700)',
+                danger: 'var(--red-700)',
+                warning: 'var(--orange-600)',
                 'warning-inverse': 'var(--neutral-1000)',
-                'success': 'var(--green-600)',
-                'discovery': 'var(--purple-600)',
-                'information': 'var(--blue-600)',
-                'bold': 'var(--neutral-600)'
+                success: 'var(--green-600)',
+                discovery: 'var(--purple-600)',
+                information: 'var(--blue-600)',
+                bold: 'var(--neutral-600)'
             },
             backgroundColor: {
                 'accent-lime-subtlest': 'var(--lime-100)',
@@ -323,8 +323,8 @@ module.exports = {
                 'accent-gray-bolder-hovered': 'var(--neutral-800)',
                 'accent-gray-bolder-pressed': 'var(--neutral-900)',
 
-                'disabled': 'var(--neutral-100-A)',
-                'input': 'var(--neutral-0)',
+                disabled: 'var(--neutral-100-A)',
+                input: 'var(--neutral-0)',
                 'input-hovered': 'var(--neutral-100)',
                 'input-pressed': 'var(--neutral-0)',
 
@@ -332,7 +332,7 @@ module.exports = {
                 'inverse-subtle-hovered': '#0000003D',
                 'inverse-subtle-pressed': '#00000052',
 
-                'neutral': 'var(--neutral-200-A)',
+                neutral: 'var(--neutral-200-A)',
                 'neutral-hovered': 'var(--neutral-300-A)',
                 'neutral-pressed': 'var(--neutral-400-A)',
 
@@ -344,7 +344,7 @@ module.exports = {
                 'neutral-bold-hovered': 'var(--neutral-900)',
                 'neutral-bold-pressed': 'var(--neutral-1000)',
 
-                'selected': 'var(--blue-100)',
+                selected: 'var(--blue-100)',
                 'selected-hovered': 'var(--blue-200)',
                 'selected-pressed': 'var(--blue-300)',
 
@@ -352,15 +352,15 @@ module.exports = {
                 'selected-bold-hovered': 'var(--blue-800)',
                 'selected-bold-pressed': 'var(--blue-900)',
 
-                'subtlest': 'var(--blue-100)',
+                subtlest: 'var(--blue-100)',
                 'subtlest-hovered': 'var(--blue-200)',
                 'subtlest-pressed': 'var(--blue-300)',
 
-                'bold': 'var(--blue-700)',
+                bold: 'var(--blue-700)',
                 'bold-hovered': 'var(--blue-800)',
                 'bold-pressed': 'var(--blue-900)',
 
-                'boldest': 'var(--blue-1000)',
+                boldest: 'var(--blue-1000)',
                 'boldest-hovered': 'var(--blue-900)',
                 'boldest-pressed': 'var(--blue-800)'
             },
@@ -368,7 +368,7 @@ module.exports = {
                 sm: '0.5rem',
                 md: '1rem',
                 lg: '1.5rem',
-                xl: '2rem',
+                xl: '2rem'
             },
             fontFamily: {
                 primary: ['"Inter Regular"', '"sans-serif"'],
