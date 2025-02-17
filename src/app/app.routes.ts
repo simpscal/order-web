@@ -1,24 +1,6 @@
 import { Routes } from '@angular/router';
 
-import { AuthGuard, GuestGuard } from '@core/guards';
-
 const ROUTES: Routes = [
-    {
-        path: 'auth',
-        loadChildren: () => import('./features/auth/auth.routes'),
-        canActivate: [GuestGuard]
-    },
-    {
-        path: 'admin',
-        loadComponent: () => import('./layouts/admin/admin.component').then((c) => c.AdminLayoutComponent),
-        canActivate: [AuthGuard],
-        children: [
-            {
-                path: '',
-                loadChildren: () => import('./features/admin/admin.routes')
-            }
-        ]
-    },
     {
         path: 'maintenance',
         loadComponent: () => import('./pages/maintenance/maintenance.component').then((c) => c.PageMaintenanceComponent)
@@ -26,8 +8,20 @@ const ROUTES: Routes = [
     {
         path: '',
         loadComponent: () => import('./layouts/default/default.component').then((c) => c.DefaultLayoutComponent),
-        canActivate: [AuthGuard],
-        children: []
+        children: [
+            {
+                path: 'products',
+                loadChildren: () => import('./features/products/products.routes')
+            },
+            {
+                path: 'stores',
+                loadChildren: () => import('./features/stores/stores.routes')
+            },
+            {
+                path: 'contacts',
+                loadChildren: () => import('./features/contacts/contacts.routes')
+            }
+        ]
     },
     {
         path: '**',

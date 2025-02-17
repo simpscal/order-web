@@ -1,0 +1,5 @@
+@layer custom-primeng {
+    .p-button-link:not(:disabled):hover .p-button-label {
+        text-decoration: none;
+    }
+}

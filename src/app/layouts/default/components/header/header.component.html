@@ -1,0 +1,54 @@
+<p-toolbar>
+    <ng-template #start>
+        <div class="w-48 h-full"></div>
+    </ng-template>
+
+    <ng-template #center>
+        <div class="flex items-center justify-center gap-10 text-base font-primary-medium">
+            <span
+                class="cursor-pointer"
+                routerLinkActive="text-brand"
+                [routerLink]="PAGE_ROUTES.products">
+                Sản phẩm
+            </span>
+
+            <span
+                class="cursor-pointer"
+                routerLinkActive="text-brand"
+                [routerLink]="PAGE_ROUTES.stores">
+                Cửa hàng
+            </span>
+
+            <span
+                class="cursor-pointer"
+                routerLinkActive="text-brand"
+                [routerLink]="PAGE_ROUTES.contacts">
+                Liên hệ
+            </span>
+        </div>
+    </ng-template>
+
+    <ng-template #end>
+        <div class="flex items-center justify-center gap-6">
+            <p-button
+                icon="pi pi-search"
+                [rounded]="true"
+                [text]="true" />
+
+            <div
+                class="flex items-center gap-2 rounded-full py-1 pl-1 pr-4 bg-surface-sunken cursor-pointer"
+                (click)="onLogin()">
+                <p-button
+                    icon="pi pi-user"
+                    severity="secondary"
+                    [rounded]="true" />
+
+                <span>Đăng Nhập</span>
+            </div>
+
+            <p-button
+                icon="pi pi-shopping-cart"
+                [rounded]="true" />
+        </div>
+    </ng-template>
+</p-toolbar>
