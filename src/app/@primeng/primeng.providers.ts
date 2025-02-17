@@ -18,7 +18,11 @@ const PRIMENG_PROVIDERS = [
                 }
             }),
             options: {
-                darkModeSelector: '[data-mode="dark"]'
+                darkModeSelector: '[data-mode="dark"]',
+                cssLayer: {
+                    name: 'primeng',
+                    order: 'tailwind, primeng, custom-primeng'
+                }
             }
         }
     }),

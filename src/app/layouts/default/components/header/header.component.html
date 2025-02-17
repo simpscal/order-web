@@ -1,0 +1,41 @@
+<p-toolbar>
+    <ng-template #start>
+        <img
+            alt="logo"
+            height="48"
+            ngSrc="assets/images/logo.svg"
+            width="189" />
+    </ng-template>
+
+    <ng-template #center>
+        <div class="flex items-center justify-center gap-10">
+            <p-button
+                label="Sản phầm"
+                [link]="true">
+            </p-button>
+
+            <p-button
+                label="Cửa hàng"
+                [link]="true">
+            </p-button>
+
+            <p-button
+                label="Liên hệ"
+                [link]="true">
+            </p-button>
+        </div>
+    </ng-template>
+
+    <ng-template #end>
+        <div class="flex items-center justify-center gap-6">
+            <p-button
+                icon="pi pi-search"
+                [rounded]="true"
+                [text]="true" />
+
+            <p-button
+                icon="pi pi-shopping-cart"
+                [rounded]="true" />
+        </div>
+    </ng-template>
+</p-toolbar>

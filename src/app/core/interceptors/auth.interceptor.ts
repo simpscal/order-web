@@ -5,7 +5,7 @@ import { catchError, Observable, of, switchMap, throwError } from 'rxjs';
 
 import { LocalStorageUtility } from '@app/shared/utilities';
 
-import { ACCESS_TOKEN_KEY, AUTH_HEADER_KEY, AUTH_SCHEME_KEY, PAGE_ROUTES } from '@app/shared/constants';
+import { ACCESS_TOKEN_KEY, AUTH_HEADER_KEY, AUTH_SCHEME_KEY } from '@app/shared/constants';
 
 import { AuthService } from '@core/services';
 
@@ -40,7 +40,7 @@ export class AuthInterceptor implements HttpInterceptor {
             return next.handle(newReq);
         }
 
-        await this._router.navigate([PAGE_ROUTES.AUTH_LOGIN]);
+        await this._router.navigate(['/']);
 
         return throwError(() => error);
     }

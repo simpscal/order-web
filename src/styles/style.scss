@@ -5,9 +5,14 @@
 @use 'global';
 @use 'variables';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@use 'primeicons/primeicons.css';
+@use 'custom-primeng';
+
+@layer tailwind {
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+}
 
 html,
 body {
@@ -32,4 +37,5 @@ body {
 a {
     font-weight: 500;
     color: var(--link);
+    text-decoration: none;
 }

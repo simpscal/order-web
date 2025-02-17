@@ -1,0 +1,7 @@
+:host {
+    ::ng-deep {
+        .p-toolbar {
+            @apply py-2 px-4;
+        }
+    }
+}

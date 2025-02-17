@@ -1,13 +1,8 @@
 import { Routes } from '@angular/router';
 
-import { AuthGuard, GuestGuard } from '@core/guards';
+import { AuthGuard } from '@core/guards';
 
 const ROUTES: Routes = [
-    {
-        path: 'auth',
-        loadChildren: () => import('./features/auth/auth.routes'),
-        canActivate: [GuestGuard]
-    },
     {
         path: 'admin',
         loadComponent: () => import('./layouts/admin/admin.component').then((c) => c.AdminLayoutComponent),
@@ -26,7 +21,6 @@ const ROUTES: Routes = [
     {
         path: '',
         loadComponent: () => import('./layouts/default/default.component').then((c) => c.DefaultLayoutComponent),
-        canActivate: [AuthGuard],
         children: []
     },
     {
