@@ -6,21 +6,22 @@
     <ng-template #center>
         <div class="flex items-center justify-center gap-10 text-base font-primary-medium">
             <span
-                class="cursor-pointer"
+                class="cursor-pointer hover:text-brand"
                 routerLinkActive="text-brand"
-                [routerLink]="PAGE_ROUTES.products">
+                [routerLink]="PAGE_ROUTES.products"
+                (click)="drawerVisible.set(true)">
                 Sản phẩm
             </span>
 
             <span
-                class="cursor-pointer"
+                class="cursor-pointer hover:text-brand"
                 routerLinkActive="text-brand"
                 [routerLink]="PAGE_ROUTES.stores">
                 Cửa hàng
             </span>
 
             <span
-                class="cursor-pointer"
+                class="cursor-pointer hover:text-brand"
                 routerLinkActive="text-brand"
                 [routerLink]="PAGE_ROUTES.contacts">
                 Liên hệ
@@ -52,3 +53,10 @@
         </div>
     </ng-template>
 </p-toolbar>
+
+<p-drawer
+    position="top"
+    [closable]="false"
+    [(visible)]="drawerVisible">
+    Hello
+</p-drawer>
