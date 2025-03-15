@@ -47,6 +47,8 @@
         "@eslint/eslintrc": "^3.2.0",
         "@eslint/js": "^9.20.0",
         "@ngxs/devtools-plugin": "^19.0.0",
+        "@ng-rsbuild/plugin-angular": "^20.6.2",
+        "@rsbuild/core": "^1.2.19",
         "@types/jasmine": "~4.3.0",
         "@typescript-eslint/eslint-plugin": "^8.22.0",
         "@typescript-eslint/parser": "^8.22.0",
